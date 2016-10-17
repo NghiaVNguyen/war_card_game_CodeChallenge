@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+    <head>
+        <meta charset="utf-8">
+        <title>War Card Game</title>
+
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css'>
+        <link rel='stylesheet' href='style.css'>
+        <script src="angular/angular.js"></script>
+        <script src="angular-route/angular-route.js"></script>
+        <script src='routes.js'></script>
+        <script src='./assets/gameController.js'></script>
+        <script src='./assets/welcomeController.js'></script>
+
+        <script src='./services/gameFactory.js'></script>
+
+
+    </head>
+    <body>
+        <h1> War Card Game </h1>
+
+        <div ng-view="">
+        </div>
+
+    </body>
+</html>

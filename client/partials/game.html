@@ -1,0 +1,32 @@
+<div ng-controller='gameController'>
+    <div>
+        <input type='text' ng-model='players.player1' placeholder='Player 1 Name' required>
+        <input type='text' ng-model='players.player2' placeholder='Player 2 Name' required>
+        <button ng-click='startNewGame(players)'>Click Here to Start a New WAR!!!</button>
+    </div>
+
+    <h6>Please enter in a player names</h6>
+
+    <button class='flip' ng-click='flipCard()'> Flip Card</button>
+    <br>
+    <div class='player1' >
+        <div class='card'>
+            <h2>{{player1.hand[player1.hand.length-1].type}}</h2>
+            <h3> of </h3>
+            <h2>{{player1.hand[player1.hand.length-1].suit}}</h2>
+        </div>
+    </div>
+
+    <div class='player2'>
+        <div class='card'>
+            <h2>{{player2.hand[player2.hand.length-1].type}}</h2>
+            <h3> of </h3>
+            <h2>{{player2.hand[player2.hand.length-1].suit}}</h2>
+        </div>
+
+    </div>
+
+    <h2 class='winner'> {{winner}} </h2>
+
+
+</div>
